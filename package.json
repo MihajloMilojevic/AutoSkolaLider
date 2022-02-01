@@ -4,7 +4,7 @@
   "description": "Ofizijalni sajt Auto Škole Lider",
   "main": "app.js",
   "scripts": {
-    "start": "npm app.js",
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
