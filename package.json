@@ -1,0 +1,31 @@
+{
+  "name": "autoskolalider",
+  "version": "1.0.0",
+  "description": "Ofizijalni sajt Auto Škole Lider",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihajloMilojevic/AutoSkolaLider.git"
+  },
+  "keywords": [],
+  "author": "Mihajlo Milojević, Ana Luković",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihajloMilojevic/AutoSkolaLider/issues"
+  },
+  "homepage": "https://github.com/MihajloMilojevic/AutoSkolaLider#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
