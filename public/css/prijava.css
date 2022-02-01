@@ -63,9 +63,6 @@ img {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
 }
-:placeholder-shown {
-    font-size: calc(1.25rem * var(--font-scale));
-}
 input {
     margin-top: .25rem;
     outline: none !important;
@@ -73,6 +70,7 @@ input {
     padding: .25rem .5rem;
     border: 1px solid black;
     border-radius: .2rem;
+    font-size: calc(1.25rem * var(--font-scale));
 }
 button {
     display: block;
