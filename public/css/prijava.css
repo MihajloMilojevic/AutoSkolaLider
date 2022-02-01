@@ -1,0 +1,120 @@
+:root {
+    --bg-gradient-start: #fff;
+    --bg-gradient-end: #009688;
+    --fg: #ef0000;
+    --font-scale: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background: linear-gradient(45deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: calc(1.75rem * var(--font-scale));
+}
+.wrapper {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: white;
+    border-radius: 1rem;
+}
+.image-wrapper {
+    height: auto;
+    width: 50%;
+    background-image: url("../images/kontakt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+/*
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+*/
+.form-wrapper {
+    width: 50%;
+    padding: 2rem 5rem;
+}
+.input-group {
+    margin-block: .5rem;
+}
+.naslov {
+    color: var(--fg);
+    font-size: calc(3rem * var(--font-scale));
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+}
+:placeholder-shown {
+    font-size: calc(1.25rem * var(--font-scale));
+}
+input {
+    margin-top: .25rem;
+    outline: none !important;
+    width: 100%;
+    padding: .25rem .5rem;
+    border: 1px solid black;
+    border-radius: .2rem;
+}
+button {
+    display: block;
+    background: var(--fg);
+    margin: auto;
+    margin-top: 1rem;
+    outline: none !important;
+    border: none !important;
+    border-radius: .2rem;
+    width: 100%;
+    color: white;
+    font-size: calc(1.5rem * var(--font-scale));
+    padding: .5rem;
+}
+
+@media (max-width: 1000px)
+{
+    :root {
+        --font-scale: .75;
+    }
+    .form-wrapper {
+        padding: 2rem 4rem;
+    }
+}
+@media (max-width: 769px)
+{
+    :root {
+        --font-scale: .75;
+    }
+    body {
+        padding-inline: .1rem;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .image-wrapper {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .form-wrapper {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+}
