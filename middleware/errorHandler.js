@@ -1,6 +1,7 @@
 const { StatusCodes } = require('http-status-codes')
 
 module.exports = (err, req, res, next) => {
+	//console.error(err);
 	let customError = { // ERROR OBJECT WITH DEFAULT VALUES
 		// set default
 		statusCode: err.statusCode || StatusCodes.INTERNAL_SERVER_ERROR,
