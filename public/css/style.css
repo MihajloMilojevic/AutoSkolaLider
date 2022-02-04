@@ -108,3 +108,35 @@ header{
 .btn:hover{
     background: #3a0505;
 }
+@media (max-width: 769px) {
+    #menu-icon{
+        display: block;
+        z-index: 9999;
+    }
+    .nav ul {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        transition: opacity .5s ease-in, transform .5s ease-in;
+        font-size: 4rem;
+        padding: 0;
+        background-color: rgba(100, 100, 100, .5);
+    }
+    .nav ul li {
+        margin: 0rem;
+    }
+    .nav #menu-icon[data-visible="false"] + ul {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    .nav #menu-icon[data-visible="true"] + ul{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
