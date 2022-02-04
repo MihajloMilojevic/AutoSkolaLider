@@ -38,6 +38,7 @@ body {
     font-size: calc(1.75rem * var(--font-scale));
 }
 .wrapper {
+    margin-top: 10vh;
     width: 80%;
     height: max-content;
     display: flex;
