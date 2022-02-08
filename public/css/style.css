@@ -79,7 +79,7 @@ header{
     min-height: 640px;
     display: flex;
     align-items: center;
-   /* background: url(images/pocetna1.png);*/
+    background: url("../images/pozadina2jpg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
