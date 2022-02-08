@@ -38,3 +38,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+	document.getElementById("html-spinner").style.display = "none";
+	document.getElementById("gallery").style.display = "block";
+})
