@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("../images/kontakt2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    
+}
+.mapa{
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   opacity: 0.5;
+   margin:0 auto;
+}
+.mapa:hover{
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 4vh;
+    
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 30px 38px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+  }
+  .link{
+      color: white;
+    text-decoration: none;
+  }
