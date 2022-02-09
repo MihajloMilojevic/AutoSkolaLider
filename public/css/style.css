@@ -13,7 +13,7 @@
 :root{
     --main-color:#d90429;
     --text-color:#020102;
-    --bg-color:#fff;
+    --bg-color:#ffffff;
 }
 section{
     padding: 4rem 0 2rem;
@@ -23,6 +23,9 @@ img{
 }
 body{
     color: var(--text-color);
+    min-height: 100vh;
+    background: url("../images/pozadina2jpg.jpg");
+    background-size: cover;
 }
 
 .container{
@@ -37,6 +40,7 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
+    background: var(--bg-color); /* BOJA POZADINE NAVIGACIONOG MENIJA*/
 }
 .nav{
     display: flex;
@@ -79,7 +83,7 @@ header{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url("../images/pozadina2jpg.jpg");
+    /* background: url("../images/pozadina2jpg.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -126,7 +130,7 @@ header{
         transition: opacity .5s ease-in, transform .5s ease-in;
         font-size: 4rem;
         padding: 0;
-        background-color: rgba(100, 100, 100, .5);
+        background-color: #fff;
     }
     .nav ul li {
         margin: 0rem;

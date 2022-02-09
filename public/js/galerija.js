@@ -15,7 +15,8 @@
 
 
 
-const slike = Array.from(document.querySelectorAll(`[data-gallery-image="true"]`));
+const slike = Array.from(document.querySelectorAll(`[data-gallery-image]`));
+var brojUcitanihSlika = 0;
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -25,6 +26,10 @@ img.onclick = function(){
   
 }
 slike.forEach(slika => {
+	if(slika.complete)
+		slikaUcitana();
+	else
+		slika.addEventListener("load", slikaUcitana, false)
 	slika.addEventListener("click", function(e) {
 		modal.style.display = "block";
 		modalImg.src = this.src;
@@ -39,7 +44,11 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-	document.getElementById("html-spinner").style.display = "none";
-	document.getElementById("gallery").style.display = "block";
-})
+function slikaUcitana() {
+	brojUcitanihSlika++;
+	if(brojUcitanihSlika === slike.length)
+	{
+		document.getElementById("html-spinner").style.display = "none";
+		document.getElementById("gallery").style.display = "block";
+	}
+}

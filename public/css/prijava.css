@@ -1,9 +1,9 @@
 :root {
     --bg-gradient-start: #fff;
     --bg-gradient-end: #009688;
-    --bg-gradient-1: #fff;
-    --bg-gradient-2: #ff4d4d;
-    --bg-gradient-3: #000;
+    --bg-gradient-1: hsla(0, 0%, 100%, 0.5);
+    --bg-gradient-2: hsla(0, 100%, 65%, 0.5);
+    --bg-gradient-3: hsla(0, 0%, 0%, 0.5);
     --fg: #ef0000;
     --fg-light: #b40000;
     --font-scale: 1;
@@ -16,16 +16,6 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body {
-    background: linear-gradient(
-                    45deg, 
-                    var(--bg-gradient-1) 5%,
-                    /* var(--bg-gradient-1) 10%,  */
-                    var(--bg-gradient-2) 50%,
-                    /* var(--bg-gradient-1) 90%,  */
-                    var(--bg-gradient-1) 100%
-                );
-    /* background: linear-gradient(45deg, var(--bg-gradient-start), var(--bg-gradient-end)); */
-    background-attachment: fixed;
     overflow-x: hidden;
     min-height: 100vh;
     width: 100vw;
