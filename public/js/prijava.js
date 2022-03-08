@@ -9,6 +9,11 @@ const porukaDOM = document.getElementById("poruka");
 const upsehColor = "lightgreen";
 const errorColor = "var(--fg)";
 
+document.getElementById("forma").addEventListener("submit", e => {
+	e.preventDefault();
+	Submit();
+})
+
 async function Prijava()
 {
 	try {

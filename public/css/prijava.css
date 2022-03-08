@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     font-size: calc(1.75rem * var(--font-scale));
 }
