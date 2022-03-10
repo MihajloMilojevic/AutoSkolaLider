@@ -26,6 +26,7 @@ body{
     min-height: 100vh;
     background: url("../images/pozadina2jpg.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center right;
 }
@@ -116,6 +117,7 @@ header{
         color: var(--text-color);
         min-height: 100vh;
         background: url("../images/pocetnamobilecroped.jpg");
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom right;
