@@ -15,13 +15,18 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    padding-bottom: 30px;
     justify-content: center;
 }
 
+footer {
+    margin: 0 !important;
+}
 @media screen and (max-width:600px) {
     .kategorije-wrapper {
         display: grid;
         grid-template-columns: 1fr;
+        background: white;
     }
 }
 

@@ -12,4 +12,5 @@ body {
                     var(--bg-gradient-1) 100%
                 );
     background-attachment: fixed;
+    min-height: 100vh;
 }

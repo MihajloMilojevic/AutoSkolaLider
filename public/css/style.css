@@ -23,6 +23,7 @@ img{
 }
 body{
     color: var(--text-color);
+    overflow-x: hidden;
     min-height: 100vh;
      background: url("../images/pozadina2jpg.jpg");
     background-repeat: no-repeat;

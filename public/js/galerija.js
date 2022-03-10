@@ -13,7 +13,7 @@
 
 
 
-
+document.querySelector("footer").style.position = "absolute";
 
 const slike = Array.from(document.querySelectorAll(`[data-gallery-image]`));
 var brojUcitanihSlika = 0;
@@ -48,6 +48,7 @@ function slikaUcitana() {
 	brojUcitanihSlika++;
 	if(brojUcitanihSlika === slike.length)
 	{
+		document.querySelector("footer").style.position = "";
 		document.getElementById("html-spinner").style.display = "none";
 		document.getElementById("gallery").style.display = "block";
 	}
