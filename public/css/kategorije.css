@@ -4,7 +4,11 @@
 }
 
 .kategorije-wrapper {
-   
+    background-image: url("../images/karticePoz.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center right;
     width: 100%;
     min-height: 100vh;
     display: grid;
