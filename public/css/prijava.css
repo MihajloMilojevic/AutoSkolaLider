@@ -38,7 +38,7 @@ body {
 
     box-shadow: 0 0 100px 20px #00000099;
     background-color: white;
-    border-radius: 1rem;
+    border-radius:  3vh;
 }
 .image-wrapper {
     height: auto;
@@ -90,6 +90,7 @@ button {
     color: white;
     font-size: calc(1.5rem * var(--font-scale));
     padding: .5rem;
+    border-radius:  3vh;
 }
 button:hover {
     background: var(--fg-light);

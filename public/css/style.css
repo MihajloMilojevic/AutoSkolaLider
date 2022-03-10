@@ -111,6 +111,7 @@ header{
     background: var(--main-color);
     color: var(--bg-color);
     font-weight: 400;
+    border-radius: 3vh;
 }
 .btn:hover{
     background: #3a0505;
