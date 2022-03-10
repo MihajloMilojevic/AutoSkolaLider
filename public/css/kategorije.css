@@ -24,7 +24,7 @@
     background: rgb(237, 49, 49);
     background: linear-gradient(0deg, rgba(237, 49, 49, 1) 0%, rgba(255, 255, 255, 1) 100%);
     border: 1px solid #ddd;
-    border-radius: 4vh;
+    border-radius: 3vh;
     max-width: 350px;
     text-align: center;
     margin-top: 60px;
@@ -55,7 +55,7 @@
     padding: 10px 22px;
     background: #ffffff62;
     color: #fff;
-    font-weight: 400;
+    font-weight: 350;
     border-radius: 3vh;
     text-decoration: none;
 }

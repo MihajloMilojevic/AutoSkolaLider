@@ -24,7 +24,7 @@ img{
 body{
     color: var(--text-color);
     min-height: 100vh;
-    background: url("../images/pozadina2jpg.jpg");
+     background: url("../images/pozadina2jpg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -44,6 +44,7 @@ header{
     left: 0;
     z-index: 100;
     background: var(--bg-color); /* BOJA POZADINE NAVIGACIONOG MENIJA*/
+    
 }
 .nav{
     display: flex;
@@ -80,6 +81,7 @@ header{
     border-bottom: 3px solid var(--main-color);   
 }
 .home{
+   
     max-width: 1300px;
     margin: auto;
     width: 100%;
@@ -88,6 +90,7 @@ header{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+   
 }
 .home-text{
     padding: 5rem;
