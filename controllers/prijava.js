@@ -5,7 +5,7 @@ const validator = require('validator');
 
 const prijava = async (req, res) => {
 
-	const {ime, jmbg, adresa, telefon, email} = req.body;
+	const {ime, jmbg, adresa, telefon, email, kategorija} = req.body;
 
 	if(!ime)
 		throw new BadRequestError("Ime i prezime su obavezni");
@@ -17,6 +17,8 @@ const prijava = async (req, res) => {
 		throw new BadRequestError("Telefon je obavezan");
 	if(!email)
 		throw new BadRequestError("Email je obavezan");
+	if(!kategorija)
+		throw new BadRequestError("Kategorija je obavezna");
 	
 	if(!validator.isAlpha(ime, 'sr-RS@latin', {	ignore: " "	}))
 		throw new BadRequestError("Neispravno ime i prezime");
@@ -40,6 +42,7 @@ const prijava = async (req, res) => {
 			<p>Adresa: ${adresa}</p>
 			<p>Telefon: <a href="tel:${telefon}">${telefon}</a></p>
 			<p>Email: <a href="mailto:${email}">${email}</a></p>
+			<p>Kategorija: ${kategorija}</p>
 		`
 	}
 	await sgMail.send(msg);

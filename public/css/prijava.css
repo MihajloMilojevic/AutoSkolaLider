@@ -95,7 +95,28 @@ button {
 button:hover {
     background: var(--fg-light);
 }
-
+.kategorija {
+    margin-block: .5rem;
+    flex-direction: column;
+}
+.kategorija label {
+    display: inline-block;
+}
+.radios {
+    display: flex;
+    justify-content: space-between;
+}
+.radios div {
+    display: inline;
+    width: auto;
+}
+.radios input {
+    display: inline;
+    width: auto;
+}
+.radios label {
+    display: inline;
+}
 @media (max-width: 1000px)
 {
     :root {

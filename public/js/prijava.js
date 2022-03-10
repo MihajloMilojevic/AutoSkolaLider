@@ -28,7 +28,8 @@ async function Prijava()
 				jmbg: jmbgDOM.value,
 				adresa: adresaDOM.value,
 				telefon: telefonDOM.value,
-				email: emailDOM.value
+				email: emailDOM.value,
+				kategorija: document.querySelector('input[name="kategorija"]:checked').value
 			})
 		})
 		const data = await response.json();
@@ -61,7 +62,6 @@ function Submit()
 
 function Obavezno(e) {
 	const element = e.currentTarget;
-	console.log(element.value.trim());
 	if(element.value)
 		element.style.borderColor = upsehColor;
 	else
@@ -69,9 +69,9 @@ function Obavezno(e) {
 }
 
 imeDOM.addEventListener("input", (e) => {
-	imeDOM.value = imeDOM.value.trim()
+	imeDOM.value = imeDOM.value
 	Obavezno(e);
-	if((/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~1-9]/).test(imeDOM.value))
+	if((/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~1-9]/).test(imeDOM.value.trim()))
 		imeDOM.style.borderColor = errorColor;
 })
 jmbgDOM.addEventListener("input", e => {
