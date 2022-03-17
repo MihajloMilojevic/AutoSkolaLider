@@ -18,7 +18,7 @@ async function Prijava()
 {
 	try {
 		prijavaDOM.disabled = true;
-		const response = await fetch("/prijava", {
+		const response = await fetch("https://liderdb036.herokuapp.com/prijava", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json"
