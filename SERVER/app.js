@@ -1,6 +1,9 @@
 require("dotenv").config();
 require("express-async-errors");
 
+const cors = require("cors")
+const helmet = require("helmet")
+
 const express = require('express'); 
 const app = express(); 
 
@@ -13,6 +16,8 @@ const errorHandler = require("./middleware/errorHandler");
 /* middleware */
 app.use(express.json());
 app.use(express.static("public"));
+app.use(helmet())
+app.use(cors);
 
 app.post("/prijava", prijava);
 app.get("/gallery/:name", sendImage);
